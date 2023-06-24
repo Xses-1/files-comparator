@@ -26,7 +26,7 @@ int main () {
 	text.ok			= false;
 
 
-	std::cout << "directory?"
+	std::cout << "path? (eg.: ./example.txt)"
 		  << std::endl;
 	std::cin >> text.directory;
 	std::cout << std::endl << std::endl;
@@ -154,7 +154,7 @@ int main () {
 	std::cout << std::endl << std::endl;
 	std::cout << "Not corecct words: " << text.notcorrect << std::endl;
 	std::cout << "All words: " << text.allwords << std::endl;
-	std::cout << (text.allwords - text.notcorrect) * 100 / text.allwords << "%    ";
+	std::cout << (text.allwords - text.notcorrect) * 100 / text.allwords << "%    " << std::endl;
 
 	tekst.close();
 
